@@ -3,14 +3,15 @@ const messageForm = document.getElementById('message-form');
 const messageInput = document.getElementById('message-input');
 const resetButton = document.getElementById('reset-button');
 
-window.onload = () => {
-    displayMessage("Olá eu sou um robô e ainda estou aprendendo a falar. Quanto mais você fala comigo mais eu aprendo!", 'bot');
-};
+
+displayMessage("Olá eu sou um robô e ainda estou aprendendo a falar. Quanto mais você fala comigo mais eu aprendo!", 'bot');
 
 resetButton.addEventListener('click', () => {
     chatHistory.replaceChildren();
     displayMessage('Memória reiniciada.', 'bot');
 });
+
+
 
 var treinar_ia = (input) => {}
 var gerar_resposta = (input) => {
