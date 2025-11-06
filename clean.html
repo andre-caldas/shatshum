@@ -10,7 +10,12 @@
 
     <link rel="stylesheet" href="clean.css">
 
-    <script type="module" src="ui.js"></script>
+    <script type="module" src="clean_ui.js"></script>
+    <script type="module">
+      import { treinar_ia, gerar_resposta } from './shatshum_070_palavra_principal.js';
+      window.treinar_ia = treinar_ia;
+      window.gerar_resposta = gerar_resposta;
+    </script>
   </head>
 
   <body>
@@ -33,19 +38,5 @@
         <button type="submit">Enviar</button>
       </form>
     </div>
-
-    <!-- day 01 -->
-    <script type="module">
-/*
-      import { treinar_ia, gerar_resposta } from './shatshum_010_constant.js';
-      import { treinar_ia, gerar_resposta } from './shatshum_020_ring.js';
-      import { treinar_ia, gerar_resposta } from './shatshum_030_rand.js';
-      import { treinar_ia, gerar_resposta } from './shatshum_040_aprende_frase.js';
-*/
-      import { treinar_ia, gerar_resposta } from './shatshum_050_tokens.js';
-
-      window.treinar_ia = treinar_ia;
-      window.gerar_resposta = gerar_resposta;
-    </script>
   </body>
 </html>
